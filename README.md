@@ -15,10 +15,11 @@ To set up the application, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/chat-room.git`
 2. Navigate to the project directory: `cd chat-room`
-3. Create a virtual environment: `virtualenv env`
+3. Create a virtual environment: `virtualenv env` or `python -m venv env`
 4. Activate the virtual environment:
    - For Windows: `env\Scripts\activate`
    - For Unix or Linux: `. env/bin/activate`
 5. Install django: `pip install django`
-6. Run database migrations: `python manage.py migrate`
-7. Start the development server: `python manage.py runserver`
+6. Install django: `pip install channels`
+7. Run database migrations: `python manage.py migrate`
+8. Start the development server: `python manage.py runserver`

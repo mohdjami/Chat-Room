@@ -1,15 +1,15 @@
 {
   "builds": [
     {
-      "src": "core/wsgi.py",
+      "src": "core/asgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.1" }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "core/wsgi.py"
+      "dest": "core/asgi.py"
     }
   ]
 }
